@@ -5,20 +5,30 @@
 
 .container__small-card-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .small-card__photo  > img {
 width: 200px;
 height: 200px;
 margin-right: 20px;
+box-shadow: 2px 2px 2px grey;
+border-radius: 5px;
 }
 
 .small-card__title {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  text-shadow: 1px 1px red;
+}
+
+.small-card__description {
+  margin-top: 20px;
+  width: 700px;
+}
+
+.small-card__description > p > a {
+  color: grey;
 }
 
 .container__small-card_separator {
